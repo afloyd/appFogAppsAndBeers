@@ -1,0 +1,97 @@
+@geekBlue: #4b71b2;
+
+@import '../third-party/bootstrap/less/bootstrap';
+@import 'fonts';
+@import 'top-nav';
+@import 'footer';
+@import 'views/about';
+
+body {
+	padding: 145px 50px 45px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	min-width: 968px;
+}
+
+a {
+	color: @geekBlue;
+}
+
+#vote-container {
+	padding-top: 25px;
+}
+
+.addthis_toolbox {
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+.login-method {
+	margin-top: 5px;
+	a {
+		border-radius: 5px;
+		cursor: pointer;
+		background-color:#fff;
+		padding:2px 15px;
+		text-decoration: underline;
+	}
+	.recaptcha-extras {
+		margin-top: 5px;
+		#recaptcha-error {
+			font-weight: bold;
+			margin-left: 5px;
+			padding: 5px;
+			background-color:#fff;
+			color:#000;
+			border-radius: 5px;
+		}
+	}
+}
+
+.form-horizontal .control-group {
+	margin-bottom: 10px;
+
+	img {
+		margin-top: 15px;
+		cursor: pointer;
+	}
+}
+
+.control-label.beer-btn-width {
+	width:190px;
+}
+
+.controls.votes-style {
+	margin-left: 190px;
+	.votes {
+		margin-left: 10px;
+		.progress {
+			margin-left: 25px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+#status, #vote-status {
+	margin-bottom: 15px;
+}
+#vote-status {
+	background-color: #FA8072;
+}
+
+#chat-area {
+	height: 100%;
+	textarea {
+		width: 100%;
+		height: 388px;
+		margin-right: 10px;
+	}
+	input {
+		width: auto;
+	}
+	#alias {
+		width: 68%;
+	}
+	#alias-display a {
+		cursor: pointer;
+	}
+}
